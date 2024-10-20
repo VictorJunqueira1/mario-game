@@ -1,0 +1,10 @@
+{
+    "login_title": "Entrar",
+    "email_placeholder": "Email",
+    "password_placeholder": "Senha",
+    "login_button": "Entrar",
+    "signup_message": "Ainda não tem uma conta? Cadastrar",
+    "signup_title": "Cadastro",
+    "signup_button": "Cadastrar",
+    "already_have_account": "Já tem uma conta? Fazer Login"
+}

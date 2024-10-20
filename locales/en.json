@@ -1,0 +1,10 @@
+{
+    "login_title": "Login",
+    "email_placeholder": "Email",
+    "password_placeholder": "Password",
+    "login_button": "Login",
+    "signup_message": "Don't have an account? Sign Up",
+    "signup_title": "Sign Up",
+    "signup_button": "Sign Up",
+    "already_have_account": "Already have an account? Log In"
+}

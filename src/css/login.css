@@ -13,6 +13,8 @@ body {
     align-items: center;
     height: 100vh;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -95,6 +97,34 @@ button:hover {
 .toggle-link:hover {
     color: #ffe600;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#language-selector {
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ffcc00;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#language-selector:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#language-selector:focus {
+    border-color: #e6b800;
+}
+
+#language-selector option {
+    font-size: 16px;
+    padding: 10px;
+    color: #333;
 }
 
 @media (max-width: 600px) {
