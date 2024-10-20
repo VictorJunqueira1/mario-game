@@ -4,18 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Game | Victor Junqueira</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Login | Mario Game</title>
+    <script type="module" src="./src/js/firebase.js"></script>
+    <script type="module" src="./src/js/login.js"></script>
+    <link rel="stylesheet" href="src/css/login.css">
 </head>
 
 <body>
-    <div class="game-board">
-        <img src="src/images/clouds.png" class="clouds" alt="Nuvens">
-        <img src="src/images/mario.gif" class="mario" alt="Mario">
-        <img src="src/images/pipe.png" class="pipe" alt="Pipe">
+    <div class="container" id="auth-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required />
+            <input type="password" id="login-password" placeholder="Senha" required />
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="message" id="message"></p>
+        <div class="toggle-link" id="auth-toggle">
+            <p>Ainda não tem uma conta? <span>Cadastrar</span></p>
+        </div>
     </div>
 
-    <script src="src/js/script.js"></script>
+    <div class="container" id="signup-container" style="display: none;">
+        <h2>Cadastro</h2>
+        <form id="signup-form">
+            <input type="email" id="signup-email" placeholder="Email" required />
+            <input type="password" id="signup-password" placeholder="Senha" required />
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="message" id="message-signup"></p>
+        <div class="toggle-link" id="signup-toggle">
+            <p>Já tem uma conta? <span>Fazer Login</span></p>
+        </div>
+    </div>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js"></script>
+    <script type="module" src="./src/js/firebase.js"></script>
 </body>
 
 </html>

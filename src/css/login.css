@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0077c2, #3e8e41);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    font-size: 32px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: box-shadow 0.3s, transform 0.2s;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+    transform: scale(1.02);
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ff5722;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+.toggle-link {
+    color: #ffcc00;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.toggle-link:hover {
+    color: #ffe600;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}

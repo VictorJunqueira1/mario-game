@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .game-board {
     width: 100%;
     height: 500px;
@@ -18,7 +26,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 2s infinite linear;
+    animation: pipe-animation 2s linear infinite;
 }
 
 .mario {
@@ -35,6 +43,35 @@
     width: 550px;
     animation: clouds-animation 15s infinite linear;
     position: absolute;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    color: #fff;
+    background-color: #E0F6FF;
+    box-shadow: #333;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+#restart-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
 }
 
 @keyframes pipe-animation {
